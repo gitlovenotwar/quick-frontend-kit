@@ -44,5 +44,5 @@ axios.interceptors.response.use((response) => {
   }
 
   // Do something with response error
-  throw message;
+  return Promise.reject(message);
 });
