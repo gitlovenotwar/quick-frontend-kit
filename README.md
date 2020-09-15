@@ -32,7 +32,6 @@ npm >= v6.12.0
 - Redux
 - React Router
 - Redux Saga
-- Express
 - PostCSS / CSS Modules
 - Jest
 - Enzyme
@@ -40,5 +39,5 @@ npm >= v6.12.0
 
 ### Client Workflow
 - an action will be dispatched through actions defined in each action types.
-- saga will listen to any actions to fire side effects, call apis, etc...
-- saga will dispatch success / fail which will receive then through reducers
+- reducer async actions will received those calls and handle the side effects. (ie. api calls, etc...)
+- an action will be then dispatched after those side effect calls which will be received on reducers
