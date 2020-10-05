@@ -31,7 +31,6 @@ npm >= v6.12.0
 - ReactJS
 - Redux
 - React Router
-- Redux Saga
 - PostCSS / CSS Modules
 - Jest
 - Enzyme
